@@ -1,13 +1,13 @@
-window.onload = function(){ document.getElementById("loader").style.display = "none" }
+//window.onload = function(){ document.getElementById("loader").style.display = "none" }
 
 
 
-// document.onreadystatechange = function () {
-//     if (document.readyState === 'complete') {
-//       //Remove loader class from div
-
-//       setTimeout(function(){ 
-//         $('#loader').css('display', 'none');
-//     }, 5000);
-//     }
-//   }
+document.onreadystatechange = function() { 
+    if (document.readyState !== "complete") { 
+        document.querySelector("body").style.visibility = "hidden"; 
+        document.querySelector("#loader").style.visibility = "visible"; 
+    } else { 
+        document.querySelector("#loader").style.display = "none"; 
+        document.querySelector("body").style.visibility = "visible"; 
+    } 
+}; 
