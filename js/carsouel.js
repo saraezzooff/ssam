@@ -34,3 +34,33 @@ $(function(){
       console.log('prev '+prev);
     }
   });
+
+  // automtice animation of the slider.
+// Autoplay Feature
+const slides = document.querySelectorAll('.carousel__item'),
+      // number_controls = document.querySelectorAll('.carousel__nav span'),
+      // btnSlide1 = number_controls[0],
+      // btnSlide2 = number_controls[1],
+      // btnSlide3 = number_controls[2],
+      next_control = document.getElementById('moveLeft'),
+      prev_control = document.getElementById('moveRight');
+let   SlideIndex = 0;
+
+console.log(SlideIndex);
+function automatic_showSlides() {
+  for (i = 0; i < slides.length; i++) {
+    // slides[i].style.display = "none"; 
+    slides[i].classList.remove('active'); 
+  }
+  SlideIndex++;
+  if (SlideIndex > slides.length) {SlideIndex = 1}    
+  // for (i = 0; i < number_controls.length; i++) {
+  //    number_controls[i].className = number_controls[i].className.replace(" active", "");
+  //  }
+  // slides[SlideIndex-1].style.display = "block";
+  slides[SlideIndex-1].classList.add('active');  
+  // number_controls[SlideIndex-1].className += " active";
+  setTimeout(automatic_showSlides, 2000); // Change image every 2 seconds
+}
+
+automatic_showSlides();
