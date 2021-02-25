@@ -233,7 +233,7 @@ nav{
     background-color: #fff;
     color: #3498db;
     padding: .5rem 1rem;
-    font-size: .9rem;
+    font-size: .8rem;
     align-items: center;
     justify-content: space-between;
     transition: .3s;
@@ -520,7 +520,7 @@ nav{
 
 /* Start Carousel */
 .carsouel_container{
-    max-width: 1200px;
+    max-width: 100%;
     overflow-x: hidden;
     margin: 0 auto;
   }
@@ -530,7 +530,7 @@ nav{
     display: flex;
      /* width: 900px; */
     height: 550px;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     width: 100%;
     /* overflow: hidden; */
     position: relative;
@@ -807,6 +807,29 @@ nav{
     color: var(--heading-color);
 }
 
+.vendors ul{
+    /* display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 20px;
+    row-gap: 40px;
+    align-items: center;
+    justify-items: center; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.vendors ul li{
+    flex: 0 0 calc(16.66% - 20px);
+    padding: 20px;
+    margin: 10px;
+    filter: grayscale(100%);
+}
+.vendors ul li:hover{
+    transform: scale(1.1) ;
+    filter: grayscale(0%);
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
 .vendors p{
     line-height: 1.5;
     font-size: 22px;
@@ -1238,6 +1261,7 @@ footer{
 
 
   #loader {
+    
     border: 16px solid #f3f3f3; /* Light grey */
     border-top: 16px solid #3498db; /* Blue */
     border-radius: 50%;
@@ -1250,4 +1274,3 @@ footer{
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
   }
-  /* https://www.starpumpalliance.com/water-treatment-pumps?utm_source=google_search&utm_medium=cpc&utm_campaign=SN_Branchen_Global_EN&utm_adgroup=Water_treatment&utm_term=treatments%20of%20water&utm_content=488139124036&utm_placement=g__c&gclid=CjwKCAiAxp-ABhALEiwAXm6IyaFXe9wSd6oRaQMtRor5_2t7ioBal0GdJN_jf7bhrpqCItoTrnj9SBoCBT8QAvD_BwE */
