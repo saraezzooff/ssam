@@ -60,7 +60,7 @@ function automatic_showSlides() {
   // slides[SlideIndex-1].style.display = "block";
   slides[SlideIndex-1].classList.add('active');  
   // number_controls[SlideIndex-1].className += " active";
-  setTimeout(automatic_showSlides, 2000); // Change image every 2 seconds
+  setTimeout(automatic_showSlides, 4000); // Change image every 2 seconds
 }
 
 automatic_showSlides();
