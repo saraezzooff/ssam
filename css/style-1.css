@@ -115,12 +115,12 @@ header{
 .logo-container{
     flex: 1;
     display: flex;
-    align-items: center;
 }
 
 .nav-btn{
     flex: 3;
     display: flex;
+
 }
 
 .nav-links{
@@ -640,28 +640,28 @@ header{
     margin-top: 100px;
     padding: 40px;
     position: relative;
-    width: 1000px;
+    max-width: 1000px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(1000px,1fr));
 }
 
-.cards-container .card{
+.cards-container .main-card{
     position: relative;
     display: flex;
     flex-direction: row;
 }
 
-.cards-container .card:nth-child(even){
+.cards-container .main-card:nth-child(even){
     flex-direction: row-reverse; 
 }
 
-.card .imgBx{
+.main-card .imgBx{
     width: 500px;
     height: 500px;
     position: relative;
 }
 
-.card .imgBx img{
+.main-card .imgBx img{
     position: absolute;
     top: 0;
     left: 0;
@@ -670,7 +670,7 @@ header{
     object-fit: cover;
 }
 
-.card .content {
+.main-card .content {
     position: relative;
     width: 500px;
     height: 500px;
@@ -680,7 +680,7 @@ header{
     align-items: center;
 }
 
-.card .content h4, .card .content p{
+.main-card .content h4, .main-card .content p{
     padding: 20px;
     text-align: center;
 }
@@ -1322,13 +1322,13 @@ footer{
         transform: translateY(15px);
     } */
     .cards-container{
-
-        grid-template-rows: repeat(auto-fit, minmax(250px,1fr));
+        max-width: 500px;
+        grid-template-columns: 1fr;
     }
-    .cards-container .card{
+    .cards-container .main-card{
         position: relative;
         display: flex;
-        flex-direction: column;
+        flex-direction: column !important;
     }
     
     /* .cards-container .card:nth-child(even){
@@ -1336,25 +1336,25 @@ footer{
     } */
 
     
-.card .imgBx{
-    width: 250px;
-    height: 250px;
-    position: relative;
+    .main-card .imgBx{
+        width: 500px;
+        height: 500px;
+        position: relative;
 }
 
-.card .imgBx img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+    .main-card .imgBx img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 
-.card .content {
+.main-card .content {
     position: relative;
-    width: 250px;
-    height: 250px;
+    width: 500px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
