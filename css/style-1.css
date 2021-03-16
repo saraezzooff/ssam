@@ -834,58 +834,8 @@ header{
 /* Applications */
 
 .applications{
-    margin: 100px auto;
-    width: 100%;
-}
-.applications h2{
-    text-align: center;
-    font-size: 48px;
-    color: var(--heading-color);
-}
+    margin-top: 100px;
 
-.applications-cards .applications-row{
-    max-width: 900px;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #ccc;
-    margin: 50px auto;
-}
-
-.applications-cards .applications-row .applications-col{
-    flex-basis: 50%;
-
-
-}
-
-.applications-cards .applications-row .card-1{
-    width: 100%;
-    height: 100%;
-    background-image: url('../images/reverse-osmosis.jpg');
-    background-position: center;
-    background-size: cover;
-}
-
-
-.applications-cards .applications-row .card-2{
-    width: 100%;
-    height: 100%;
-    background-image: url('../images/sewage.jpg');
-    background-position: center;
-    background-size: cover;
-}
-
-.applications-cards .applications-row .card-3{
-    width: 100%;
-    height: 100%;
-    background-image: url('../images/sewage-lifting.jpg');
-    background-position: center;
-    background-size: cover;
-}
-
-.applications-cards .applications-row .applications-col{
-    text-align: center;
 }
 /* Contact */
 .contact-us{
