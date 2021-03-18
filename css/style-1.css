@@ -680,7 +680,6 @@ header {
     height: 100%;
 /*     object-fit: contain; */
 }
-
 .main-card .content {
     position: relative;
     width: 700px;
@@ -689,6 +688,12 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: all .2s ease;
+}
+
+.main-card .content:hover {
+    background-color: #28527a;
+    color: #efefef;
 }
 
 .main-card .content h4,
