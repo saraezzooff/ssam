@@ -33,6 +33,7 @@ div .heading-styling {
 }
 
 
+
 /* Heading Style */
 
 h2 span {
@@ -1467,5 +1468,9 @@ footer {
         height: 0px;
         border-bottom: 0px solid #F5A93F;
         border-top: 0px solid #F5A93F;
+    }
+    
+        footer .container {
+        flex-wrap: wrap;
     }
 }
