@@ -1471,6 +1471,6 @@ footer {
     }
     
         footer .container {
-        flex-wrap: wrap;
+        flex-wrap: wrap !important;
     }
 }
