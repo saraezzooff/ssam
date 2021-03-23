@@ -1404,4 +1404,66 @@ footer {
         justify-content: center;
         align-items: center;
     }
+    .main-card .imgBx {
+        width: 100%;
+    }
+    /* carsouel */
+    .carousel-item__container h1 {
+        font-size: 22px;
+    }
+}
+
+@media(max-width: 600px) {
+    /* carsouel */
+    .carousel-item__container h1 {
+        font-size: 14px;
+    }
+    .carousel__item {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    .carousel-item__image,
+    .carousel-item__info {
+        width: 100%;
+    }
+    .carousel-item__image {
+        background-size: cover;
+        background-size: 100% 220px;
+    }
+    /* cards */
+    .cards-container {
+        max-width: 350px;
+        grid-template-columns: 1fr;
+    }
+    .cards-container .imgBx {
+        width: 350px;
+        height: 250px;
+        margin-top: 50px;
+    }
+    .cards-container .imgBx img {
+        width: 100%;
+    }
+    .main-card .content {
+        max-width: 350px;
+        max-height: 250px;
+    }
+    .main-card .content h4 {
+        padding-top: 10px;
+        font-size: 16px;
+    }
+    .main-card .content p {
+        font-size: 12px;
+    }
+    .heading-styling {
+        font-size: 14px;
+    }
+    h2 span:before,
+    h2 span:after {
+        content: '';
+        position: absolute;
+        height: 0px;
+        border-bottom: 0px solid #F5A93F;
+        border-top: 0px solid #F5A93F;
+    }
 }
