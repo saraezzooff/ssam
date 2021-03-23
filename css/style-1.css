@@ -1434,6 +1434,8 @@ footer {
     /* cards */
     .cards-container {
         max-width: 350px;
+        margin-top: 50px;
+        padding: 20px 0px;
         grid-template-columns: 1fr;
     }
     .cards-container .imgBx {
