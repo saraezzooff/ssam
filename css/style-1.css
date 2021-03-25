@@ -1497,4 +1497,14 @@ footer {
     footer .container {
         flex-wrap: wrap !important;
     }
+    
+        /* about */
+    .about-us .about-content h3,
+    .who-we h2 {
+        font-size: 18px;
+    }
+    .about-us .about-content p,
+    .who-we ul li {
+        font-size: 12px;
+    }
 }
