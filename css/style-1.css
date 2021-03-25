@@ -1564,7 +1564,7 @@ footer {
     }
     /* services */
     .image-bg {
-        height: 350px;
+        height: 150px !important;
         width: 100%;
         background-position: center;
         background-repeat: no-repeat;
