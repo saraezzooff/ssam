@@ -1571,3 +1571,22 @@ footer {
         background-size: 200px 150px;
     }
 }
+
+@media(max-width: 499px) {
+    .cards-container .imgBx {
+        max-width: 400px !important;
+        height: 300px;
+        margin-top: 50px;
+    }
+    .cards-container .imgBx img {
+        width: 100%;
+    }
+    .main-card .content h4,
+    .main-card .content p {
+        text-align: left;
+    }
+    .main-card .content {
+        max-width: 400px;
+        max-height: 250px;
+    }
+}
