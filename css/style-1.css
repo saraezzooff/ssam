@@ -1633,4 +1633,8 @@ footer {
     footer ul li {
         font-size: 14px;
     }
+    
+    .who-we ul li {
+        text-align: left;
+    }
 }
