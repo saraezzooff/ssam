@@ -1222,6 +1222,14 @@ footer {
     background-size: cover;
 }
 
+.image-bg.image-designs {
+    height: 350px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 .text-wrapper {
     position: absolute;
     top: 0;
@@ -1265,6 +1273,20 @@ footer {
 .img-darken {
     transition: all .3s ease;
     filter: brightness(10%);
+}
+
+
+/* designs */
+
+.designs h2 {
+    text-align: center;
+    margin: 50px;
+    margin-bottom: 20px;
+    color: var(--heading-color);
+}
+
+.designs ul li {
+    padding: 0 20px;
 }
 
 
@@ -1600,5 +1622,15 @@ footer {
     .main-card .content {
         max-width: 400px;
         max-height: 250px;
+    }
+    footer h2 {
+        font-size: 18px;
+    }
+    footer h2 {
+        font-size: 18px;
+    }
+    footer p,
+    footer ul li {
+        font-size: 14px;
     }
 }
