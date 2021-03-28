@@ -1280,7 +1280,7 @@ footer {
 
 .designs h2 {
     text-align: center;
-    margin: 50px;
+    margin-top: 50px;
     margin-bottom: 20px;
     color: var(--heading-color);
 }
